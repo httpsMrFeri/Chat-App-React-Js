@@ -212,7 +212,7 @@ html,
     color: var(--FLiteBlue);
     background-color: #ffffff00;
     border: none;
-    border-bottom: 3px solid var(--FLiteBlue);
+    border-bottom: 2px solid var(--FLiteBlue);
     margin: 15px;
     display: block;
     border-radius: 5px;
@@ -222,7 +222,7 @@ html,
 
 .InputText:hover,
 .InputPassword:hover {
-    border: 3px solid var(--FLiteBlue);
+    border: 2px solid var(--FLiteBlue);
 } 
 
 .InputText::placeholder,
@@ -235,7 +235,7 @@ html,
 .InputPassword:focus {
     color: var(--FDarkBlue);
     border: 0.1px solid var(--FDarkBlue);
-    border-bottom: 3px solid var(--FDarkBlue);
+    border-bottom: 2px solid var(--FDarkBlue);
     background-color: var(--FLiteBlue);
 }
 
@@ -247,12 +247,12 @@ html,
 .LogIn .Form div .InputPassword,
 .LogIn .Form div .InputText {
     color: var(--FDarkBlue);
-    border-bottom: 3px solid var(--FDarkBlue);
+    border-bottom: 2px solid var(--FDarkBlue);
 }
 
 .LogIn .Form div .InputPassword:hover,
 .LogIn .Form div .InputText:hover{
-    border: 3px solid var(--FDarkBlue);
+    border: 2px solid var(--FDarkBlue);
 }
 
 .LogIn .Form div .InputPassword::placeholder,
@@ -266,7 +266,7 @@ html,
 .LogIn .Form div .InputText:focus {
     color: var(--FLiteBlue);
     border: 0.1px solid var(--FLiteBlue);
-    border-bottom: 3px solid var(--FLiteBlue);
+    border-bottom: 2px solid var(--FLiteBlue);
     background-color: var(--FDarkBlue);
 }
 

@@ -8,47 +8,38 @@
     flex-wrap: wrap;
     align-items: center;
     height: 100%;
-    color: var(--FLiteBlue);
     background-color: #000000b1;
-    color: #ff0000;
 }
 
-.TextBlue {
-    color: var(--FLiteBlue);
-}
-
-.TextRed{
-    color: #ff0000;
-}
-
-#BackGroundErorPage{
+#BackGroundErorPage {
     width: 650px;
     height: 400px;
     text-align: center;
 }
 
-.message {
+#BackGroundErorPage .message {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.message p {
+#BackGroundErorPage .message p,
+#BackGroundErorPage .message h1 {
     display: inline-block;
 }
 
-.st0 {
+#BackGroundErorPage svg g text.st0 {
     font-family: "FootlightMTLight";
 }
 
-.st1 {
+#BackGroundErorPage svg g text.st1 {
     font-size: 83.0285px;
 }
 
-.st2 {
+#BackGroundErorPage svg g path.st2 {
     fill: gray;
 }
 
-svg {
+#BackGroundErorPage svg {
     width: 500px;
     height: 250px;
     margin-bottom: 20px;
@@ -71,24 +62,20 @@ path#XMLID_2_ {
     fill: var(--FLiteBlue);
 }
 
-#container {
-    text-align: center;
-}
-
-.message {
+#BackGroundErorPage .message {
     color: var(--FLiteBlue);
 }
 
-.message:after {
+#BackGroundErorPage .message:after {
     content: "]";
 }
 
-.message:before {
+#BackGroundErorPage .message:before {
     content: "[";
 }
 
-.message:after,
-.message:before {
+#BackGroundErorPage .message:after,
+#BackGroundErorPage .message:before {
     color: var(--FLiteBlue);
     font-size: 20px;
     -webkit-animation-name: opacity;
@@ -102,6 +89,17 @@ path#XMLID_2_ {
     animation-iteration-count: infinite;
     margin: 0 10px;
 }
+
+#BackGroundErorPage .message#messageH1::after,
+#BackGroundErorPage .message#messageH1::before {
+    font-size: 40px;
+}
+
+/* #BackGroundErorPage .message.TextRed#messageH1::after,
+#BackGroundErorPage .message.TextRed#messageH1::before {
+    font-size: 40px;
+    color: #ff0000;
+} */
 
 @-webkit-keyframes opacity {
 
@@ -152,4 +150,12 @@ path#XMLID_2_ {
         r: 20;
         opacity: 0;
     }
+}
+
+#BackGroundErorPage .TextBlue {
+    color: var(--FLiteBlue);
+}
+
+#BackGroundErorPage .TextRed {
+    color: #ff0000;
 }

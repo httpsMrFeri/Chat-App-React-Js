@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee");
+
+.Page403 {
+    font-family: "Bungee", cursive;
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* background-color: #494949; */
+    height: 100%;
+}
+
+.Page403 svg {
+    width: 50vw;
+}
+
+.lightblue {
+    fill: #ff0000;
+}
+
+.Page403 svg .eye {
+    cx: calc(115px + 30px * var(--mouse-x));
+    cy: calc(50px + 30px * var(--mouse-y));
+}
+
+#eye-wrap {
+    overflow: hidden;
+}
+
+.Page403 svg .error-text {
+    font-size: 120px;
+}
+
+.Page403 svg .alarm {
+    animation: alarmOn 0.5s infinite;
+}
+
+@keyframes alarmOn {
+    to {
+        fill: darkred;
+    }
+}
+
+
+
+
+.Page403 div .message {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff0000;
+}
+
+.Page403 div .message p,
+.Page403 div .message h1 {
+    display: inline-block;
+}
+
+
+
+.Page403 div .message:after {
+    content: "]";
+}
+
+.Page403 div .message:before {
+    content: "[";
+}
+
+.Page403 div .message:after,
+.Page403 div .message:before {
+    color: #ff0000;
+    font-size: 20px;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: opacity;
+    animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    margin: 0 10px;
+}
+
+.Page403 div .message#messageH1::after,
+.Page403 div .message#messageH1::before {
+    font-size: 50px;
+}
+
+@-webkit-keyframes opacity {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.Page403 div .TextBlack {
+    color: #000;
+}
+
+.Page403 div .TextRed {
+    color: #ff0000;
+}

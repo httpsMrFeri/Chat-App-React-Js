@@ -4,7 +4,7 @@ function SingUp({ setWitchPage}) {
   function HandlerChekValue() {
     console.log("fuuuuun")
     let inputValue = document.querySelector('#UserTokenID')
-    inputValue.value == '' ? alert('Please Enter TOKEN') : setWitchPage(1)
+    inputValue.value == '' ? alert('Please Enter TOKEN') : inputValue.value == "Faramarz" ? setWitchPage(1) : alert('Enter Valid TOKEN')
   }
 
   return (

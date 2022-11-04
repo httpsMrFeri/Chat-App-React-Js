@@ -3,8 +3,14 @@ import React from 'react'
 function LogIn({ setWitchPage }) {
     function HandlerChekValue() {
         console.log("fuuuuun")
-        let inputValue = document.querySelector('#UserUserName')
-        inputValue.value == null | inputValue.value == "" ? alert('Please Enter UserName') : setWitchPage(1)
+        let UserNameValue = document.querySelector('#UserUserName'), PasswordValue = document.querySelector('#UserPassword')
+        UserNameValue.value == null | UserNameValue.value == "" ?
+            alert('Please Enter UserName') :
+            UserNameValue.value == "Admin" ?
+                PasswordValue.value == "Admin" ?
+                    setWitchPage(1) :
+                    alert('Worng Password') :
+                alert('Enter Valid User')
     }
 
     return (

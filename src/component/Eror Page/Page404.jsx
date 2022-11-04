@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Page404.css'
 function Page404() {
+
     const [timeLeft, setTimeLeft] = useState(10);
 
     useEffect(() => {
@@ -29,7 +30,7 @@ function Page404() {
         return () => clearInterval(intervalId);
 
     }, [timeLeft]);
-
+    
     return (
 
         <div className='Page404'>
@@ -68,10 +69,12 @@ s25.3-11.3,25.3-25.3C125.3,29,115.9,18.5,103.8,16.7z" />
                     </g>
                 </svg>
 
-                <div class="message">
-                    Page Not Found
+                <div class={"message"} id='messageH1'>
+                    <h1>
+                        "Page Not Found"
+                    </h1>
                 </div>
-                <div className='message'>
+                <div className='message' id='messageP'>
                     You will be redirected to main page in <p className='TextBlue'>00:00:{timeLeft}</p> sec
                 </div>
             </div>
